@@ -53,7 +53,7 @@ public class Game {
             checkMysteryWordForLetter(guess);
         }
 
-        while (incorrectGuess != 8 && correctGuess != randomWord.length());
+        while (incorrectGuess < 8 && correctGuess < randomWord.length());
     }
 
     public void checkMysteryWordForLetter(String letter) {
